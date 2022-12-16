@@ -5,8 +5,6 @@ const { jwtMiddlewareHandler } = require("../middleware/JwtMiddlewareHandler");
 
 module.exports = jwtMiddlewareHandler("deleteEmployee")
   .use(async (ctx) => {
-    const allUsers = ctx.bindings.getUser;
-    console.log("all users", allUsers);
     const id = ctx.req.query.id;
     if (!id) {
       ctx.res = response(400, {}, "enter user id");

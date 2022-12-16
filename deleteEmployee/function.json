@@ -11,15 +11,6 @@
       "type": "http",
       "direction": "out",
       "name": "res"
-    },
-    {
-      "type": "cosmosDB",
-      "direction": "in",
-      "name": "getUser",
-      "databaseName": "test",
-      "collectionName": "users",
-      "connectionStringSetting": "CosmosDbConnectionString",
-      "sqlQuery": "select * from c "
     }
   ]
 }
